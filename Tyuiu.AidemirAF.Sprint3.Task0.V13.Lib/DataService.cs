@@ -11,7 +11,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task0.V13.Lib
             int i;
             for (i = startValue; i <= stopValue; i++)
             {
-                sumSeries = sumSeries + (Math.Pow(a, i) + (1 / 2)) * Math.Cos(i); 
+                sumSeries = sumSeries + (Math.Pow(a, i) + (0.5)) * Math.Cos(i); 
             }
             return Math.Round(sumSeries, 3);
         }
