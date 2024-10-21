@@ -6,7 +6,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task1.V16.Lib
     {
         public double GetSumSeries(double value, int startValue, int stopValue)
         {
-            double sumSeries = 1;
+            double sumSeries = 0;
             while (startValue <= stopValue)
             {
                 sumSeries = sumSeries + ((Math.Pow(value, 2) * Math.Sin(startValue)) + 1);
