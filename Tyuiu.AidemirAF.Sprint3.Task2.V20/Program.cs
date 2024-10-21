@@ -12,7 +12,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task2.V20
     {
         static void Main(string[] args)
         {
-            
+
             DataService ds = new DataService();
             Console.WriteLine("*****************************************************************************************************");
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                  *");

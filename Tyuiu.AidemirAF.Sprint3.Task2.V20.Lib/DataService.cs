@@ -11,7 +11,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task2.V20.Lib
             {
                 multSeries = multSeries * (Math.Pow((2 / ((Math.Cos(value) + 0.5))), startValue));
                 startValue++;
-            } while (startValue <=  stopValue);
+            } while (startValue <= stopValue);
             return Math.Round(multSeries, 3);
         }
     }
