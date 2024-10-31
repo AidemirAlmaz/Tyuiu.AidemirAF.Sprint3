@@ -6,15 +6,20 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22.Lib
     {
         public int GetMaxCharCount(string value, char item)
         {
-            int count = 0;
-            foreach (char c in value)
+            int res = 0;
+            char[] ch = value.ToCharArray();
+            foreach (char c in ch)
             {
-                if (c == item) 
+                if (c == item)
                 {
-                    count++;
+                    res++;
+                }
+                else
+                {
+                    res = 0;
                 }
             }
-            return count;
+            return res.Max();
         }
     }
 }

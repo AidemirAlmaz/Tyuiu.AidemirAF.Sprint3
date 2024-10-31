@@ -1,12 +1,13 @@
-﻿using Tyuiu.AidemirAF.Sprint3.Task3.V22.Lib;
+﻿using Tyuiu.AidemirAF.Sprint3.Task4.V21.Lib;
 
 /*
  * ЗАДАНИЕ
- * Используя цикл foreach подсчитать максимальное количество букв b, 
- * находящихся на соседних позициях в строке: tbtbbb dsfbg bbg
+ * На отрезке, где х принимает значения от -5 до 5,
+ * вычислить значение функции у = (cos(х) - х)/x
+ * При х = 0 пропустить значение. Полученные значения перемножать
  */
 
-namespace Tyuiu.AidemirAF.Sprint3.Task3.V22
+namespace Tyuiu.AidemirAF.Sprint3.Task4.V21
 {
     internal class Program
     {
@@ -17,16 +18,17 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                  *");
             Console.WriteLine("*****************************************************************************************************");
 
-            string value = "tbtbbb dsfbg bbg";
-            char item = 'b';
-            Console.WriteLine("Исходная строка:" + value);
-            Console.WriteLine("Искомый результат:" + item);
+            int startValue = -5;
+            int stopValue = 5;
+
+            Console.WriteLine("Старт шага = " + startValue);
+            Console.WriteLine("Конец шага = " + stopValue);
 
             Console.WriteLine("*****************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                        *");
             Console.WriteLine("*****************************************************************************************************");
 
-            Console.WriteLine("Количество символов, находящихся на соседних позициях = " + ds.GetMaxCharCount(value, item));
+            Console.WriteLine("Произведение ряда = " + ds.Calculate(startValue, stopValue));
             Console.ReadKey();
         }
     }
