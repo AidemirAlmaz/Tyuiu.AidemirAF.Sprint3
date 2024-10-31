@@ -1,12 +1,6 @@
-﻿using Tyuiu.AidemirAF.Sprint3.Task3.V22.Lib;
+﻿using Tyuiu.AidemirAF.Sprint3.Task5.V30.Lib;
 
-/*
- * ЗАДАНИЕ
- * Используя цикл foreach подсчитать максимальное количество букв b, 
- * находящихся на соседних позициях в строке: tbtbbb dsfbg bbg
- */
-
-namespace Tyuiu.AidemirAF.Sprint3.Task3.V22
+namespace Tyuiu.AidemirAF.Sprint3.Task5.V30
 {
     internal class Program
     {
@@ -17,18 +11,24 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                  *");
             Console.WriteLine("*****************************************************************************************************");
 
-            string value = "tbtbbb dsfbg bbg";
-            char item = 'b';
-            Console.WriteLine("Исходная строка:" + value);
-            Console.WriteLine("Искомый результат:" + item);
+            int startValue1 = 1;
+            int stopValue1 = 3;
+            int startValue2 = 1;
+            int stopValue2 = 11;
+            int x = 2;
+
+            Console.WriteLine("Переменная Х = " + x);
+            Console.WriteLine("Старт шага первой суммы ряда = " + startValue1);
+            Console.WriteLine("Конец шага первой суммы ряда = " + stopValue1);
+            Console.WriteLine("Старт шага первой суммы ряда = " + startValue2);
+            Console.WriteLine("Конец шага первой суммы ряда = " + stopValue2);
 
             Console.WriteLine("*****************************************************************************************************");
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                                                        *");
             Console.WriteLine("*****************************************************************************************************");
 
-            Console.WriteLine("Количество символов, находящихся на соседних позициях = " + ds.GetMaxCharCount(value, item));
+            Console.WriteLine("Сумма ряда = " + ds.GetSumSumSeries(x, startValue1, startValue2, stopValue1, stopValue2));
             Console.ReadKey();
-
         }
     }
 }
