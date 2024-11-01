@@ -12,7 +12,8 @@ namespace Tyuiu.AidemirAF.Sprint3.Task6.V21.Lib
             {
                 for (int d = 1; d <= x; d++)
                 {
-                    sum += d;
+                    if (x % d == 0)
+                        sum += d;
                 }
             }
             return sum;
