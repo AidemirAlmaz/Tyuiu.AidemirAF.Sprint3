@@ -22,6 +22,8 @@ namespace Tyuiu.AidemirAF.Sprint3.Task7.V7.Lib
                 else
                 {
                     y = 0;
+                    valueArray[count] = y;
+                    count++;
                 }
             }
             return valueArray;
