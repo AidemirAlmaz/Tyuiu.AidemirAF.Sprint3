@@ -11,15 +11,9 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22.Lib
             foreach (char c in ch)
             {
                 if (c == item)
-                {
                     res++;
-                }
-                else
-                {
-                    res = 0;
-                }
             }
-            return res.Max();
+            return res;
         }
     }
 }

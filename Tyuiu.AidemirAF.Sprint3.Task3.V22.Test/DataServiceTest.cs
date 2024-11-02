@@ -9,7 +9,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22.Test
         public void TestMethod1()
         {
             DataService ds = new DataService();
-            string value = "aaabcaaaa";
+            string value = "bcaaaa";
             char item = 'a';
             double res = ds.GetMaxCharCount(value, item);
             int wait = 4;
