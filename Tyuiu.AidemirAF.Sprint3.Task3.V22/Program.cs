@@ -17,7 +17,7 @@ namespace Tyuiu.AidemirAF.Sprint3.Task3.V22
             Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                                                  *");
             Console.WriteLine("*****************************************************************************************************");
 
-            string value = "ttbbb dsfg";
+            string value = "tbtbbb dsfbg bbg";
             char item = 'b';
             Console.WriteLine("Исходная строка:" + value);
             Console.WriteLine("Искомый результат:" + item);
